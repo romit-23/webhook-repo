@@ -82,15 +82,10 @@ sudo systemctl start mongod  # Linux
 brew services start mongodb-community  # macOS
 ```
 
-#### Verify MongoDB Connection:
-```bash
-# Test MongoDB connection
-python -c "
-from pymongo import MongoClient
-client = MongoClient('mongodb://localhost:27017/')
-print('MongoDB connected:', client.server_info()['version'])
-"
-```
+<p align="center">
+  <img src="/images/app-flow.png" alt="Connect Database" />
+</p>
+
 
 ### 4. Run the Application
 
