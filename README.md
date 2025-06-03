@@ -256,8 +256,8 @@ gunicorn -w 4 -b 0.0.0.0:5000 run:app
 
 ## 🔗 Submission Repository Links
 
-- **webhook-repo** (this repository): `https://github.com/[your-username]/webhook-repo`
-- **action-repo** (demo repository): `https://github.com/[your-username]/action-repo`
+- **webhook-repo** (this repository): `https://github.com/romit-23/webhook-repo`
+- **action-repo** (demo repository): `https://github.com/romit-23/action-repo`
 
 ## 🎯 Assessment Implementation Summary
 
