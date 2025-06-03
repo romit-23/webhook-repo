@@ -1,4 +1,4 @@
-# GitHub Webhook Receiver - Developer Assessment Submission
+# GitHub Webhook Receiver - Developer Assessment 
 
 **Candidate Submission for Developer Assessment Task**
 
@@ -15,7 +15,7 @@ This application receives GitHub webhooks for repository events and stores them 
 ## Application Flow
 
 <p align="center">
-  <img src="/images/mongo.png" alt="App Flow" />
+  <img src="/images/app-flow.png" alt="App Flow" />
 </p>
 
 
@@ -83,7 +83,7 @@ brew services start mongodb-community  # macOS
 ```
 
 <p align="center">
-  <img src="/images/app-flow.png" alt="Connect Database" />
+  <img src="/images/mongo.png.png" alt="Connect Database" />
 </p>
 
 
