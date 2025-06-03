@@ -12,6 +12,9 @@ This application receives GitHub webhooks for repository events and stores them 
 - **PUSH**: `{author} pushed to {branch} on {timestamp}`
 - **PULL_REQUEST**: `{author} submitted a pull request from {from_branch} to {to_branch} on {timestamp}`
 - **MERGE**: `{author} merged branch {from_branch} to {to_branch} on {timestamp}`
+## Application Flow
+
+![App Flow](/images/app-flow.png)
 
 ## 🏗️ Project Structure
 
