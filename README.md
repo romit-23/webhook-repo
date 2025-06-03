@@ -47,7 +47,7 @@ WEBHOOK-REPO/
 
 ```bash
 # Clone the repository
-git clone <your-webhook-repo-url>
+git clone https://github.com/romit-23/webhook-repo.git
 cd webhook-repo
 
 # Create virtual environment
