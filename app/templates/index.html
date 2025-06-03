@@ -1,0 +1,53 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Events Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 { color: #333; }
+        .event {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function pollEvents() {
+            fetch('/webhook/events')
+
+                .then(res => res.json())
+                .then(data => {
+                    const container = document.getElementById('events-container');
+                    container.innerHTML = '';
+                    data.forEach(event => {
+                        const div = document.createElement('div');
+                        div.className = 'event';
+                        div.textContent = event.message;
+                        container.appendChild(div);
+                    });
+                });
+        }
+        pollEvents();
+        setInterval(pollEvents, 15000);
+    </script>
+</head>
+<body>
+    <h1>Recent GitHub Events</h1>
+    <div id="events-container">
+        {% for event in events %}
+            <div class="event">{{ format_event_for_ui(event) }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
