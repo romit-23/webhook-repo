@@ -14,7 +14,10 @@ This application receives GitHub webhooks for repository events and stores them 
 - **MERGE**: `{author} merged branch {from_branch} to {to_branch} on {timestamp}`
 ## Application Flow
 
-![App Flow](/images/app-flow.png)
+<p align="center">
+  <img src="/images/app-flow.png" alt="App Flow" />
+</p>
+
 
 ## 🏗️ Project Structure
 
