@@ -15,7 +15,7 @@ This application receives GitHub webhooks for repository events and stores them 
 ## Application Flow
 
 <p align="center">
-  <img src="/images/app-flow.png" alt="App Flow" />
+  <img src="/images/mongo.png" alt="App Flow" />
 </p>
 
 
@@ -105,6 +105,9 @@ The application will be available at: `http://127.0.0.1:5000`
 | `/webhook/events` | GET | JSON API for latest events |
 | `/webhook/debug/db-info` | GET | Database connection info (debug) |
 | `/webhook/debug/raw-events` | GET | Raw events from database (debug) |
+<p align="center">
+  <img src="/images/events.png" alt="/webhook/events" />
+</p>
 
 ## 🔧 GitHub Webhook Configuration
 
