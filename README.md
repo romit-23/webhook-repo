@@ -109,6 +109,7 @@ The application will be available at: `http://127.0.0.1:5000`
   <img src="/images/events.png" alt="/webhook/events" />
 </p>
 
+
 ## 🔧 GitHub Webhook Configuration
 
 ### 1. In your action-repo repository (already configured):
@@ -123,7 +124,9 @@ The webhook is already set up in my action-repo with the following configuration
 To test the implementation:
 - Any push, pull request, or merge action on my `action-repo` will trigger the webhook
 - Events will be captured, stored in MongoDB, and displayed in the UI
-
+<p align="center">
+  <img src="/images/webhook-github.png" alt="webhook-github" />
+</p>
 ### 2. For local development with ngrok:
 ```bash
 # Install ngrok
@@ -134,13 +137,15 @@ ngrok http 5000
 
 # Use the generated HTTPS URL for GitHub webhook
 # Example: https://abc123.ngrok.io/webhook/receiver
-```
+<p align="center">
+  <img src="/images/ngrok.png" alt="ngrok" />
+</p>
 
 ## 🗄️ MongoDB Schema
 
 Events are stored in the `github_events` database with the following schema:
 
-```json
+``` json
 {
   "_id": "ObjectId",
   "request_id": "commit_id_or_pr_number",
@@ -151,6 +156,9 @@ Events are stored in the `github_events` database with the following schema:
   "timestamp": "ISO_8601_timestamp"
 }
 ```
+<p align="center">
+  <img src="/images/mongosh.png" alt="database" />
+</p>
 
 ## 🖥️ UI Features
 
@@ -159,7 +167,9 @@ Events are stored in the `github_events` database with the following schema:
 - **Formatted Messages**: Human-readable event descriptions
 - **Responsive Design**: Works on desktop and mobile
 - **Auto-refresh**: No manual refresh needed
-
+<p align="center">
+  <img src="/images/ui.png" alt="/webhook/" />
+</p>
 ## 🧪 Testing the Implementation
 
 ### Demonstration Steps:
