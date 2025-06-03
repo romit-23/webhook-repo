@@ -136,7 +136,7 @@ To test the implementation:
 ngrok http 5000
 
 # Use the generated HTTPS URL for GitHub webhook
-# Example: https://abc123.ngrok.io/webhook/receiver
+
 <p align="center">
   <img src="/images/ngrok.png" alt="ngrok" />
 </p>
